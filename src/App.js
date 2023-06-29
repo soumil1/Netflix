@@ -1,15 +1,26 @@
 
 import './App.css';
 import Counter from './Counter';
+import requests from './requests';
+import Row from '';
 
 function App() {
   return (
     <div className="App">
 
-      <Counter />
-      Hello Netflix
+      We will rock together
 
-      Hola Amigos!! 
+      <Row title="NETFLIX ORIGINALS" fetchUrl = {requests.fetchNetflixOriginals} />
+      <Row title="Trending" fetchUrl = {requests.fetchTrending} />
+      <Row title="Top Rated" fetchUrl = {requests.fetchTopRated} />
+      <Row title="Action Movies" fetchUrl = {requests.fetchActionMovies} />
+      <Row title="Comedy Movies" fetchUrl = {requests.fetchComedyMovies} />
+      <Row title="Romance Movies" fetchUrl = {requests.fetchRomanceMovies} />
+      <Row title="Original Documentaries" fetchUrl = {requests.fetchDocumentaries} />
+      <Row title="Trending Shows" fetchUrl = {requests.fetchTrendingShows} />
+      <Row title="Top Rated Shows" fetchUrl = {requests.fetchTopRatedShows} />
+      <Row title="Airing Today" fetchUrl = {requests.fetchAiringToday} />
+
     </div>
   );
 }
