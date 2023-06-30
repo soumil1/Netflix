@@ -2,7 +2,7 @@
 import './App.css';
 import Counter from './Counter';
 import requests from './requests';
-import Row from '';
+import Row from "./Row";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
 
       We will rock together
 
-      <Row title="NETFLIX ORIGINALS" fetchUrl = {requests.fetchNetflixOriginals} />
+      <Row title="NETFLIX MOVIE LIST" fetchUrl = {requests.fetchNetflixMovieList} isLargeRow />
       <Row title="Trending" fetchUrl = {requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl = {requests.fetchTopRated} />
       <Row title="Action Movies" fetchUrl = {requests.fetchActionMovies} />
