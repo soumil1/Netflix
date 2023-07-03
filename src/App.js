@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-// eslint-disable-next-line
-import Counter from './Counter';
 import Row from "./Row.js";
 import requests from './requests';
 import Banner from "./Banner.js";
