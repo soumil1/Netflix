@@ -30,7 +30,7 @@ function Nav() {
       />
       <img
         className="nav_avatar"
-        src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/366be133850498.56ba69ac36858.png"
+        src="https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo-2006.png"
         alt="Netflix Logo"
       />
     </div>
