@@ -16,12 +16,12 @@ The Netflix Clone project aims to recreate the user interface and basic function
 
 You can access a live demo of the Netflix Clone project at https://moviehub-netflix-4a784p.netlify.app/
 
-<br>
+
 ## <p align="center"><strong>Home-Page</strong></p>
 
 It uses react useState useEffect component so it changes randomly on refresh.
 
-![alt text](assets/Banner.png "Home-Page")
+![Home-Page](assets/Banner.png "Home-Page")
 
 
 
