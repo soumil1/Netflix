@@ -21,7 +21,7 @@ You can access a live demo of the Netflix Clone project at https://moviehub-netf
 
 It uses react useState useEffect component so it changes randomly on refresh.
 
-![Home-Page](assets/Banner.png "Home-Page")
+![Home-Page](Assets/Banner.png "Home-Page")
 
 
 
@@ -60,13 +60,13 @@ npm start
 
 # <p align="center"><strong>Genres</strong></p>
 
-![alt text](assets/Genre.png "Genres")
+![alt text](Assets/Genre.png "Genres")
 
 <br>
 
 # <p align="center"><strong>Trending Movies</strong></p>
 
-![alt text](assets/TrendingMovies.png "Trending Movies")
+![alt text](Assets/TrendingMovies.png "Trending Movies")
 
 
 
