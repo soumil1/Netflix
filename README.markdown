@@ -19,7 +19,7 @@ You can access a live demo of the Netflix Clone project at https://moviehub-netf
 
 ## <p align="center"><strong>Home-Page</strong></p>
 
-It uses react useState useEffect component so it changes randomly on refresh.
+The Web Page uses React useState and useEffect hooks, causing all the components to change randomly upon each refresh.
 
 ![Home-Page](Assets/Banner.png "Home-Page")
 
