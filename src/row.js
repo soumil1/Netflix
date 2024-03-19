@@ -48,9 +48,6 @@ function Row({title, fetchUrl, isLargeRow}) {
         }).catch((error) => console.log(error));
     }
   }
-
-
-
     return (
 
         <div className="row">
