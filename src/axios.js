@@ -1,12 +1,11 @@
-import axios from 'axios';
+import axios from "axios";
 
-/* Base URL for making requests to the movie database */
-
-const instance = axios.create({ 
-    baseURL: 'https://api.themoviedb.org/3',
+const instance = axios.create({
+  baseURL: "https://unogs-unogs-v1.p.rapidapi.com",
+  headers: {
+    "X-RapidAPI-Key": process.env.REACT_APP_RAPIDAPI_KEY,
+    "X-RapidAPI-Host": "unogs-unogs-v1.p.rapidapi.com",
+  },
 });
-
-/* Make a GET request to '/foo-bar' */
-/* Request URL: https://api.themoviedb.org/3/foo-bar */
 
 export default instance;

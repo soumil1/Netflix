@@ -1,7 +1,14 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .App {
   background-color: black;
+  min-height: 100vh;
+}
+
+.app_rows {
+  padding-bottom: 50px;
 }

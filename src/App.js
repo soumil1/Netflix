@@ -1,9 +1,8 @@
-import React from 'react';
 import './App.css';
-import Row from "./row.js";
+import Row from "./components/Row";
 import requests from './requests';
-import Banner from "./Banner.js";
-import Nav from './Nav';
+import Banner from "./components/Banner";
+import Nav from './components/Nav';
 
 function App() {
   return (
@@ -11,19 +10,20 @@ function App() {
 
       <Nav />
 
-      <Banner />
-
-      <Row title="NETFLIX ORIGINALS" isLargeRow fetchUrl = {requests.fetchNetflixOriginals} />
-      <Row title="Trending" fetchUrl = {requests.fetchTrending} />
-      <Row title="Top Rated" fetchUrl = {requests.fetchTopRated} />
-      <Row title="Action Movies" fetchUrl = {requests.fetchActionMovies} />
-      <Row title="Comedy Movies" fetchUrl = {requests.fetchComedyMovies} />
-      <Row title="Trending Movies" fetchUrl = {requests.fetchTrendingMovies} />
-      <Row title="Original Documentaries" fetchUrl = {requests.fetchDocumentaries} />
-      <Row title="Trending Shows" fetchUrl = {requests.fetchTrendingShows} />
-      <Row title="Top Rated Shows" fetchUrl = {requests.fetchTopRatedShows} />
-      <Row title="Airing Today" fetchUrl = {requests.fetchAiringToday} />
-
+      <main>
+        <Banner fetchUrl={requests.fetchTrending} />
+        <section className="rows">
+          <Row title="NETFLIX ORIGINALS" isLargeRow fetchUrl = {requests.fetchNetflixOriginals} />
+          <Row title="Trending Now" fetchUrl = {requests.fetchTrending} />
+          <Row title="Top Rated" fetchUrl = {requests.fetchTopRated} />
+          <Row title="Action Movies" fetchUrl = {requests.fetchActionMovies} />
+          <Row title="Comedy" fetchUrl = {requests.fetchComedyMovies} />
+          <Row title="Horror" fetchUrl={requests.fetchHorrorMovies} />
+          <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
+          <Row title="Documentaries" fetchUrl = {requests.fetchDocumentaries} />
+          <Row title="Trending TV Shows" fetchUrl = {requests.fetchTrendingShows} />
+      </section>
+      </main>
     </div>
   );
 }
