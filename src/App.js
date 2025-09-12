@@ -1,29 +1,21 @@
 import './App.css';
 import Row from "./components/Row";
-import requests from './requests';
 import Banner from "./components/Banner";
 import Nav from './components/Nav';
+import requests from './requests';
 
 function App() {
   return (
-    <div className="App">
-
+    <div className="app">
       <Nav />
-
-      <main>
-        <Banner fetchUrl={requests.fetchTrending} />
-        <section className="rows">
-          <Row title="NETFLIX ORIGINALS" isLargeRow fetchUrl = {requests.fetchNetflixOriginals} />
-          <Row title="Trending Now" fetchUrl = {requests.fetchTrending} />
-          <Row title="Top Rated" fetchUrl = {requests.fetchTopRated} />
-          <Row title="Action Movies" fetchUrl = {requests.fetchActionMovies} />
-          <Row title="Comedy" fetchUrl = {requests.fetchComedyMovies} />
-          <Row title="Horror" fetchUrl={requests.fetchHorrorMovies} />
-          <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
-          <Row title="Documentaries" fetchUrl = {requests.fetchDocumentaries} />
-          <Row title="Trending TV Shows" fetchUrl = {requests.fetchTrendingShows} />
-      </section>
-      </main>
+      <Banner fetchUrl={requests.fetchPopularMovies} />
+      <Row title="Popular Movies" fetchUrl={requests.fetchPopularMovies} isLargeRow />
+      <Row title="Trending TV Shows" fetchUrl={requests.fetchTrendingTV} />
+      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
+      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
+      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+      <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
+      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
     </div>
   );
 }

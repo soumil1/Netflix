@@ -1,13 +1,13 @@
+const BASE_URL = "http://localhost:5000/api/movies";
+
 const requests = {
-  fetchTrending: `/aaapi.cgi?q=get:new7:US`,
-  fetchNetflixOriginals: `/aaapi.cgi?q=get:netflixOriginals:US`,
-  fetchTopRated: `/aaapi.cgi?q=get:topRated:US`,
-  fetchActionMovies: `/aaapi.cgi?q=genre:Action`,
-  fetchComedyMovies: `/aaapi.cgi?q=genre:Comedy`,
-  fetchRomanceMovies: `/aaapi.cgi?q=genre:Romance`,
-  fetchDocumentaries: `/aaapi.cgi?q=genre:Documentary`,
-  fetchTrendingShows: `/aaapi.cgi?q=type:series`,
-  fetchTopRatedShows: `/aaapi.cgi?q=topRatedShows`,
+  fetchPopularMovies: `${BASE_URL}/popular`,
+  fetchTrendingTV: `${BASE_URL}/trending`,
+  fetchActionMovies: `${BASE_URL}/genre/1`,
+  fetchComedyMovies: `${BASE_URL}/genre/3`,
+  fetchHorrorMovies: `${BASE_URL}/genre/4`,
+  fetchRomanceMovies: `${BASE_URL}/genre/5`,
+  fetchDocumentaries: `${BASE_URL}/genre/7`,
 };
 
 export default requests;
